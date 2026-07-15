@@ -26,10 +26,11 @@ export default defineConfig({
   server: {
     port: 3000,
     proxy: {
-      '/api': {
-        target: 'http://localhost:5000',
-        changeOrigin: true,
-      }
-    }
+  '/api': {
+    target: 'https://tts-car-h6s7-git-main-vuanh22775-gifs-projects.vercel.app',
+    changeOrigin: true,
+    secure: true,
+  }
+}
   }
 });
